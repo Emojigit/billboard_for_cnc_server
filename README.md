@@ -5,7 +5,7 @@ by crazyginger72
 
 requested by crazyR
 
-adds a 4x6 node signlike bilboard
+adds a 3x5 node signlike bilboard
  
  
 use the bb.png texture as a size guide for your new bilboards.
