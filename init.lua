@@ -62,38 +62,21 @@ minetest.register_craft({
 minetest.register_node("billboard:bb_black_yellow", {
 		description = "Billboard black_yellow",
 		drawtype = "signlike",
-<<<<<<< HEAD
                 visual_scale = 3.0,
 		tiles = {
                                 "bb_black_yellow.png"
                             },
 		inventory_image = "bb_black_yellow.png",
 		wield_image = "bb_black_yellow.png",
-=======
-                visual_scale = 3,
-		tiles = {
-                                "bb_black_yellow.png"                         -- up
-                            },
-		inventory_image = "bb_black_yellow.png",
-		wield_image = "bb_black_yellow.png",
-		wield_scale = {x=1, y=1, z=1},
->>>>>>> 078c4ad7d9c517c512600f2bc91d3fd7b7874bef
 		paramtype = "light",
 		paramtype2 = "wallmounted",
 		sunlight_propagates = true,
 		walkable = false,
 		light_source = 1, -- reflecting a bit of light might be expected
 		selection_box = {
-<<<<<<< HEAD
                                                 type = "wallmounted",
                                             },
 		groups = {choppy=2,dig_immediate=3,attached_node=1, picture=1},
-=======
-		type = "wallmounted",
-		wall_side = {-0.45, -1.5, -2.5, -.4, 1.5, 2.5}, -- NodeBox
-		},
-		groups = {choppy=2,dig_immediate=3,attached_node=1},
->>>>>>> 078c4ad7d9c517c512600f2bc91d3fd7b7874bef
 		legacy_wallmounted = true,
 
 })
