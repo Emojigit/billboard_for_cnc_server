@@ -1,15 +1,20 @@
-bilboard mod
-======================
+Billboard
+-----------
 
-by crazyginger72
+Forked from
+https://github.com/crazyginger72/billboard.git
 
-requested by crazyR
+This Mod adds 3x3 signlike Billboards with Craftrecipes.
+The Dimension of an Texture is 512 x 300 Pixel.
 
-adds a 3x5 node signlike bilboard
- 
- 
-use the bb.png texture as a size guide for your new bilboards.
+Craftrecipes:
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!WARNING DO NOT USE THE TRANSPARENT AREAS ON THE TEXTURE OR YOU WILL RUIN THE SIGN!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Wo = Wool
+St = Stick
+SI = wooden signlike
+
+St St St
+SI Wo Wo
+St St St
+
+License: WTFPL
