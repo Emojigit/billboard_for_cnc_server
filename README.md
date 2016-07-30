@@ -7,9 +7,9 @@ This Mod adds signlike Billboards and different sizes with Craftrecipes.
 You only need a Texture for the Billboard.
 To add a Billboard, save the Texture in textures, rename the image in shape of:
 
-bb_<itemname>_<color>_<color>.png
+bb_itemname_color_color.png
 
-then add an Entry in Nodes like:
+then add an Entry in nodes.lua like:
 
 { itemname, color, color, size }
 
