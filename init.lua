@@ -28,7 +28,7 @@ for i,n in ipairs(bb_boardlist) do
                         output = "billboard:bb_"..n[1].."_"..n[2].."_"..n[3],
                         recipe = {
                                             {"group:stick", "group:stick", "group:stick"},
-                                            {"default"..n[1], "wool:"..n[2], "wool:"..n[3]},
+                                            {"default:"..n[1], "wool:"..n[2], "wool:"..n[3]},
                                             {"group:stick", "group:stick", "group:stick"}
                                     }
     })
