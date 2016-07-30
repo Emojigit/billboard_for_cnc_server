@@ -1,7 +1,7 @@
 bb_boardlist = {
     
-            { "white", "white" },
-            { "yellow", "yellow" },
-            { "black", "yellow" },
-            { "green", "blue" }
+            { "sign_wall_wood", "white", "white" },
+            { "sign_wall_wood", "yellow", "yellow" },
+            { "sign_wall_wood", "black", "yellow" },
+            { "sign_wall_wood", "green", "blue" }
 }
