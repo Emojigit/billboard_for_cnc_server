@@ -9,12 +9,12 @@ The Dimension of an Texture is 512 x 300 Pixel.
 
 Craftrecipes:
 
-Wo = Wool
-St = Stick
-SI = wooden signlike
+Wo = Wool  
+St = Stick  
+SI = wooden Sign   
 
-St St St
-SI Wo Wo
-St St St
+St St St  
+SI Wo Wo  
+St St St  
 
 License: WTFPL
