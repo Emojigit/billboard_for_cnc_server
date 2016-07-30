@@ -1,11 +1,12 @@
 dofile(minetest.get_modpath("billboard") .. "/nodes.lua")
 
 for i,n in ipairs(bb_boardlist) do
-    
+
+    -- Register the Node
     minetest.register_node("billboard:bb_".. n[1].."_"..n[2].."_"..n[3], {
                     description = "Billboard " ..n[1].."_"..n[2].."_"..n[3],
                     drawtype = "signlike",
-                    visual_scale = 3.0,
+                    visual_scale = n[4],
                     tiles = {
                                     "bb_"..n[1].."_"..n[2].."_"..n[3]..".png"
                                 },
@@ -23,7 +24,8 @@ for i,n in ipairs(bb_boardlist) do
                     legacy_wallmounted = true,
         
     })
-
+    
+    -- Register the Recipe for the Node
     minetest.register_craft({
                         output = "billboard:bb_"..n[1].."_"..n[2].."_"..n[3],
                         recipe = {
