@@ -9,7 +9,7 @@ To add a Billboard, save the Texture in textures, rename the image in shape of:
 
 bb_itemname_color_color.png
 
-then add an Entry in Nodes like:
+then add an Entry in nodes.lua like:
 
 { itemname, color, color, size }
 
