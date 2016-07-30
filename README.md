@@ -3,8 +3,17 @@
 Forked from
 https://github.com/crazyginger72/billboard.git
 
-This Mod adds 3x3 signlike Billboards with Craftrecipes.
-The Dimension of an Texture is 512 x 300 Pixel.
+This Mod adds signlike Billboards and different sizes with Craftrecipes.
+You only need a Texture for the Billboard.
+To add a Billboard, save the Texture in textures, rename the image in shape of:
+
+bb_<itemname>_<color>_<color>.png
+
+then add an Entry in Nodes like:
+
+{ itemname, color, color, size }
+
+then craft your Billboard in Minetest.
 
 #*Depends:*
 
@@ -14,11 +23,11 @@ wool
 #*Craftrecipes:*
 
 Wo = Wool  
-St = Stick  
+DI = Item from default:  
 Si = wooden Sign   
 
 St St St  
-Si Wo Wo  
+DI Wo Wo  
 St St St  
 
 #*License:*
