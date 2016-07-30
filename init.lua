@@ -8,10 +8,10 @@ for i,n in ipairs(bb_boardlist) do
                     drawtype = "signlike",
                     visual_scale = n[4],
                     tiles = {
-                                    "bb_"..n[1].."_"..n[2].."_"..n[3]..".png"
+                                    "bb_"..n[1].."_"..n[2].."_"..n[3].."."..n[5]
                                 },
-                    inventory_image = "bb_"..n[1].."_"..n[2].."_"..n[3]..".png",
-                    wield_image = "bb_"..n[1].."_"..n[2].."_"..n[3]..".png",
+                    inventory_image = "bb_"..n[1].."_"..n[2].."_"..n[3].."."..n[5],
+                    wield_image = "bb_"..n[1].."_"..n[2].."_"..n[3].."."..n[5],
                     paramtype = "light",
                     paramtype2 = "wallmounted",
                     sunlight_propagates = true,
