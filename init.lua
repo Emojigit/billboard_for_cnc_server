@@ -1,34 +1,40 @@
-minetest.register_node("billboard:bb_white_white", {
-		description = "Billboard white_white",
-		drawtype = "signlike",
-                visual_scale = 3.0,
-		tiles = {
-                                "bb_white_white.png"
-                            },
-		inventory_image = "bb_white_white.png",
-		wield_image = "bb_white_white.png",
-		paramtype = "light",
-		paramtype2 = "wallmounted",
-		sunlight_propagates = true,
-		walkable = false,
-		light_source = 1, -- reflecting a bit of light might be expected
-		selection_box = {
-                                                type = "wallmounted"
-		},
-		groups = {choppy=2,dig_immediate=3,attached_node=1, picture=1},
-		legacy_wallmounted = true,
+dofile(minetest.get_modpath("billboard") .. "/nodes.lua")
 
-})
+for i,n in ipairs(bb_boardlist) do
+    
+    minetest.register_node("billboard:bb_".. n[1].."_"..n[2], {
+                    description = "Billboard " ..n[1].."_"..n[2],
+                    drawtype = "signlike",
+                    visual_scale = 3.0,
+                    tiles = {
+                                    "bb_"..n[1].."_"..n[2]..".png"
+                                },
+                    inventory_image = "bb_"..n[1].."_"..n[2]..".png",
+                    wield_image = "bb_"..n[1].."_"..n[2]..".png",
+                    paramtype = "light",
+                    paramtype2 = "wallmounted",
+                    sunlight_propagates = true,
+                    walkable = false,
+                    light_source = 1, -- reflecting a bit of light might be expected
+                    selection_box = {
+                                                    type = "wallmounted"
+                                            },
+                    groups = {choppy=2,dig_immediate=3,attached_node=1, picture=1},
+                    legacy_wallmounted = true,
+        
+    })
 
-minetest.register_craft({
-                    output = "billboard:bb_white_white",
-                    recipe = {
-                                        {"group:stick", "group:stick", "group:stick"},
-                                        {"default:sign_wall_wood", "wool:white", "wool:white"},
-                                        {"group:stick", "group:stick", "group:stick"}
-                                }
-})
+    minetest.register_craft({
+                        output = "billboard:bb_"..n[1].."_"..n[2],
+                        recipe = {
+                                            {"group:stick", "group:stick", "group:stick"},
+                                            {"default:sign_wall_wood", "wool:"..n[1], "wool:"..n[2]},
+                                            {"group:stick", "group:stick", "group:stick"}
+                                    }
+    })
 
+end
+--[[
 minetest.register_node("billboard:bb_yellow_yellow", {
 		description = "Billboard yellow_yellow",
 		drawtype = "signlike",
@@ -118,3 +124,4 @@ minetest.register_craft({
                                         {"group:stick", "group:stick", "group:stick"}
                                 }
 })
+]]
