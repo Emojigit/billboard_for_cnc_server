@@ -15,10 +15,10 @@ wool
 
 Wo = Wool  
 St = Stick  
-SI = wooden Sign   
+Si = wooden Sign   
 
 St St St  
-SI Wo Wo  
+Si Wo Wo  
 St St St  
 
 #*License:*
