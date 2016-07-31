@@ -22,6 +22,7 @@ wool
 
 #*Craftrecipes:*
 
+St = Stick  
 Wo = Wool  
 DI = Item from default:  
 
