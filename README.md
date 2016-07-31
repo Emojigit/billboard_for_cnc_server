@@ -24,7 +24,6 @@ wool
 
 Wo = Wool  
 DI = Item from default:  
-Si = wooden Sign   
 
 St St St  
 DI Wo Wo  
