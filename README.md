@@ -11,7 +11,7 @@ bb_itemname_color_color.png
 
 then add an Entry in nodes.lua like:
 
-{ itemname, color, color, size }
+{ itemname, color, color, size, imagetyp }
 
 then craft your Billboard in Minetest.
 
