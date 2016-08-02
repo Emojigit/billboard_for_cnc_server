@@ -10,25 +10,23 @@ for i,n in ipairs(bb_boardlist) do
     -- For Recipe: Item isn't given?
     if n.item1 == nil then
         n.item1 = "sign_wall_wood"
-    end
-    if n.item2 == nil then
+    elseif n.item2 == nil then
         n.item2 = "white"
-    end
-    if n.item3 == nil then
+    elseif n.item3 == nil then
         n.item3 = "white"
     end
     
     -- scale isn't given or 0 (invalid)?
     if n.scale == nil or n.scale == 0 then
         n.scale = 1
-    end
-    -- scale has a negative value?
-    if n.scale < 0 then 
+    elseif n.scale < 0 then  -- scale has a negative value?
         n.scale = n.scale * -1
     end
     
-    -- no Imagetyp is given?
-    if n.imgtyp == nil then
+    -- Filename isn't given?
+    if n.filename == nil then
+        n.filename = "bb_" .. n.item1 .. "_" .. n.item2 .. "_" .. n.item3
+    elseif n.imgtyp == nil then -- no Imagetyp is given?
         n.imgtyp = "png"
     end
     
@@ -38,10 +36,10 @@ for i,n in ipairs(bb_boardlist) do
                     drawtype = "signlike",
                     visual_scale = n.scale,
                     tiles = {
-                                    "bb_"..n.item1.."_"..n.item2.."_"..n.item3.."."..n.imgtyp
+                                    n.filename .. "." ..n.imgtyp
                                 },
-                    inventory_image = "bb_"..n.item1.."_"..n.item2.."_"..n.item3.."."..n.imgtyp,
-                    wield_image = "bb_"..n.item1.."_"..n.item2.."_"..n.item3.."."..n.imgtyp,
+                    inventory_image = n.filename .."."..n.imgtyp,
+                    wield_image = n.filename .. "." ..n.imgtyp,
                     paramtype = "light",
                     paramtype2 = "wallmounted",
                     sunlight_propagates = true,

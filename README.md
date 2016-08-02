@@ -5,15 +5,8 @@ https://github.com/crazyginger72/billboard.git
 
 This Mod adds signlike Billboards and different sizes with Craftrecipes.
 You only need a Texture for the Billboard.
-To add a Billboard, save the Texture in textures, rename the image in shape of:
-
-bb_itemname_color_color.png
-
-then add an Entry in nodes.lua like:
-
-{ itemname, color, color, size, imagetyp }
-
-then craft your Billboard in Minetest.
+To add a new or own Billboard:
+Save your Image in textures and add an Entry in nodes.lua.
 
 #*Depends:*
 
