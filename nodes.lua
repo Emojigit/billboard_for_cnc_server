@@ -1,11 +1,73 @@
-bb_boardlist = {
+bb_boardlist = 
+        {
+--[[
+    
+            Description of an Entry:
+   
+            {
+                title = Name for the Billboard, default = bb_item1_item2_item3
+                
+                Recipe to craft:
+                item1 = First Item for the recipe, default = sign_wall_wood
+                item2 = ..                                  , default = white
+                item3 = ..                                  , default = white
+            
+                Size of the Billboard in Blocks
+                scale = number                         , default = 0
+            
+                Typ of the taken Image (must be in textures)
+                imgtyp = "Typ"                          , default = "png"
+            }
 
-            -- { default:, wool:, wool:, visual_scale, Imagetyp }
-            { "sign_wall_wood", "white", "white", 3.0, "jpg" },
-            { "sign_wall_wood", "yellow", "yellow", 3.0, "jpg" },
-            { "sign_wall_wood", "black", "yellow", 3.5, "jpg" },
-            { "sign_wall_wood", "green", "blue", 3.0, "png" },
-            { "sign_wall_wood", "blue", "yellow", 2.0, "jpg" },
-            { "paper", "black", "orange", 2.5, "jpg" },
-            { "paper", "green", "green", 2.0, "png" }
-}
+--]]
+            
+            {  title = "Aikido Billboard", 
+                item1 = "sign_wall_wood", 
+                item2 = "white", 
+                item3 = "white", 
+                scale = 3.0, 
+                imgtyp = "jpg" },
+                
+            {  title = "Detergen Billboard", 
+                item1 = "sign_wall_wood", 
+                item2 = "yellow", 
+                item3 = "yellow", 
+                scale = 3.0, 
+                imgtyp = "jpg" },
+                
+            {  title = "Mesedrink Billboard", 
+                item1 = "sign_wall_wood", 
+                item2 = "black", 
+                item3 = "yellow", 
+                scale = 3.5, 
+                imgtyp = "jpg" },
+                
+            {  title = "Meseforte Billboard", 
+                item1 = "sign_wall_wood", 
+                item2 = "green", 
+                item3 = "blue", 
+                scale = 3.0, 
+                imgtyp = "png" },
+                
+            {  title = "Mesewave Billboard", 
+                item1 = "sign_wall_wood", 
+                item2 = "blue", 
+                item3 = "yellow", 
+                scale = 2.0, 
+                imgtyp = "jpg" },
+                
+            {  title = "Newspaper Billboard", 
+                item1 = "paper", 
+                item2 = "black", 
+                item3 = "orange", 
+                scale = 2.5, 
+                imgtyp = "jpg" },
+                
+            {  title = "Army Billboard", 
+                item1 = "paper", 
+                item2 = "green", 
+                item3 = "green", 
+                scale = 2.0, 
+                imgtyp = "png" }
+                
+    }
