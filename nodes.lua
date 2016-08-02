@@ -1,29 +1,43 @@
-bb_boardlist = 
-        {
 --[[
     
-            Description of an Entry:
+        ***********************************************
+        * Description of an Entry for the Billboards:  *
+        ***********************************************
    
             {
-                title = Name for the Billboard, default = bb_item1_item2_item3
+                title = Name for the Billboard, 
+                If no Name is given: default = bb_item1_item2_item3
                 
                 Recipe to craft:
-                item1 = First Item for the recipe, default = sign_wall_wood
-                item2 = ..                                  , default = white
-                item3 = ..                                  , default = white
+                item1 = 1. Item for the recipe
+                item2 = 2. Item for the recipe
+                item3 = 3. Item for the recipe
+                
+                If an Item missed, defaulte for:
+                item1 = sign_wall_wood
+                item2 = white
+                item3 = white
             
                 Size of the Billboard in Blocks
-                scale = number                         , default = 0
+                scale = number
+                If no scale is given, the default number is 1
             
-                filename = Filename for the Image, default = bb_item1_item2_item3
+                filename = Filename for the Image
+                If no filename is given, the filename = bb_item1_item2_item3
             
-                Typ of the taken Image (must be in textures)
-                imgtyp = "Typ"                          , default = "png"
+                Typ of the taken Image (must be in textures):
+                imgtyp = "Typ"
+                If no Typ is given, the typ is png.
+            
             }
 
 --]]
+
+bb_boardlist = 
+        {
             
-            {  title = "Aikido Billboard", 
+            {  
+                title = "Aikido Billboard", 
                 item1 = "sign_wall_wood", 
                 item2 = "white", 
                 item3 = "white", 
@@ -32,7 +46,8 @@ bb_boardlist =
                 imgtyp = "jpg" 
             },
                 
-            {  title = "Detergen Billboard", 
+            {  
+                title = "Detergen Billboard", 
                 item1 = "sign_wall_wood", 
                 item2 = "yellow", 
                 item3 = "yellow", 
@@ -41,7 +56,8 @@ bb_boardlist =
                 imgtyp = "jpg" 
             },
                 
-            {  title = "Mesedrink Billboard", 
+            {  
+                title = "Mesedrink Billboard", 
                 item1 = "sign_wall_wood", 
                 item2 = "black", 
                 item3 = "yellow", 
@@ -50,7 +66,8 @@ bb_boardlist =
                 imgtyp = "jpg" 
             },
                 
-            {  title = "Meseforte Billboard", 
+            {  
+                title = "Meseforte Billboard", 
                 item1 = "sign_wall_wood", 
                 item2 = "green", 
                 item3 = "blue", 
@@ -59,7 +76,8 @@ bb_boardlist =
                 imgtyp = "png" 
             },
                 
-            {  title = "Mesewave Billboard", 
+            {  
+                title = "Mesewave Billboard", 
                 item1 = "sign_wall_wood", 
                 item2 = "blue", 
                 item3 = "yellow", 
@@ -68,7 +86,8 @@ bb_boardlist =
                 imgtyp = "jpg" 
             },
                 
-            {  title = "Newspaper Billboard", 
+            {  
+                title = "Newspaper Billboard", 
                 item1 = "paper", 
                 item2 = "black", 
                 item3 = "orange", 
@@ -77,7 +96,8 @@ bb_boardlist =
                 imgtyp = "jpg" 
             },
                 
-            {  title = "Army Billboard", 
+            {  
+                title = "Army Billboard", 
                 item1 = "paper", 
                 item2 = "green", 
                 item3 = "green", 
@@ -86,4 +106,4 @@ bb_boardlist =
                 imgtyp = "png" 
             }
                 
-    }
+    } -- bb_boardlist
