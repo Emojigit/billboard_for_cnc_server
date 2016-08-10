@@ -13,7 +13,7 @@
                 item2 = 2. Item for the recipe
                 item3 = 3. Item for the recipe
                 
-                If an Item missed, defaulte for:
+                If an Item missed, default for:
                 item1 = sign_wall_wood
                 item2 = white
                 item3 = white
@@ -33,7 +33,7 @@
 
 --]]
 
-bb_boardlist = 
+boardlist = 
         {
             
             {  

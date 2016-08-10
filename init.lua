@@ -1,6 +1,6 @@
 dofile(minetest.get_modpath("billboard") .. "/nodes.lua")
 
-for i,n in ipairs(bb_boardlist) do
+for i,n in ipairs(boardlist) do
 
     -- No Title there?
     if n.title == nil then
