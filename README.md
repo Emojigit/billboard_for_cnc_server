@@ -30,4 +30,4 @@ WTFPL
 
 #*Screenshot:*
 
-![Screenshot 1] (textures/Screenshot.png)
+![Screenshot 1](textures/Screenshot.png)
