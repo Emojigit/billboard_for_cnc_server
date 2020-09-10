@@ -1,4 +1,4 @@
-dofile(minetest.get_modpath("billboard") .. "/nodes.lua")
+dofile(minetest.get_modpath("billboard_for_cnc_server") .. "/nodes.lua")
 
 for i,n in ipairs(boardlist) do
 
@@ -31,7 +31,7 @@ for i,n in ipairs(boardlist) do
     end
     
     -- Register the Node
-    minetest.register_node("billboard:bb_".. n.item1 .."_"..n.item2 .."_"..n.item3, {
+    minetest.register_node(":billboard:bb_".. n.item1 .."_"..n.item2 .."_"..n.item3, {
                     description = n.title,
                     drawtype = "signlike",
                     visual_scale = n.scale,
